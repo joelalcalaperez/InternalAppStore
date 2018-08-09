@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">App Store</string>
+    <string name="app_name">Cern Store</string>
 
     <!--region Applications-->
     <string name="applications_subtitle_anonymous">anonymous</string>

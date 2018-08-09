@@ -538,7 +538,6 @@ class VersionsActivity : AppCompatActivity() {
             R.id.menu_action_stop -> application?.packageName?.let { (getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager).killBackgroundProcesses(it) }
             R.id.menu_action_info -> application?.packageName?.let { safeStartActivity(Utils.getDetailsIntent(it)) }
             R.id.menu_action_uninstall -> application?.packageName?.let { safeStartActivityForResult(Utils.getDeleteIntent(it), create(VersionRequest.Action.UNINSTALL)) }
-            R.id.menu_action_store -> application?.packageName?.let { safeStartActivity(Utils.getMarketIntent(it)) }
             R.id.menu_action_notification_settings -> {
                 application?.let { safeStartActivity(Utils.notificationSettingsIntent(this, Notifications.newVersionsNotificationChannelId(this, it))) }
             }
